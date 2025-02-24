@@ -1,0 +1,11 @@
+<div class="sidebar">
+    <% if (allCars && allCars.length) { %>
+        <% allCars.forEach(car => { %>
+          <a href="#" class="sidebar-btn" data-name="<%= allCars.name %>">
+            <%= allCars.name || 'no name' %>
+          </a>
+        <% }) %>
+    <% } %>
+</div>
+
+

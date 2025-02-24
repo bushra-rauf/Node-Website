@@ -1,0 +1,34 @@
+
+Node Multipages Website :-
+
+|___ Data
+|     |____Car.js
+|
+|___ Public
+|     |_____Images
+|     |_____styles
+|              
+|
+|_____Routes
+|        |_____BMW
+|        |_____Audi
+|
+|_______view
+|       |
+|       |_____ pages
+|       |         |______home.ejs
+|       |         |______feature.ejs
+|       |
+|       |_____ Partials
+|                 |___Head.ejs
+|                 |___Header.ejs
+|                 |___nav.ejs
+|                 |___sidebar
+|                 |___main.ejs
+|                 |___Footer.ejs
+|                                                  
+|__index.js
+
+npm init 
+craeted folders
+npm i nodemon,express,dotenv,gitignore 

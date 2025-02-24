@@ -1,0 +1,11 @@
+<div class="sidebar">
+    <% if (allCars && allCars.length) { %>
+        <% allCars.forEach(car => { %>
+          <a href="<%= `${car.type}/${car.slug}` %>" class="sidebar-btn" data-name="<%= JSON.stringify(car) %>">
+            <%= car.name || 'no name' %>
+          </a>
+        <% }) %>
+    <% } else {%>
+      <p>No car found</p>
+    <% } %>
+</div>

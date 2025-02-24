@@ -1,0 +1,31 @@
+<main>
+    <h1>Welcome to the Cars page</h1>
+    <p>Discover the elegance and performance of Audi and BMW cars. Experience Audi's sophisticated design and advanced technology, or indulge in the dynamic driving pleasure of BMW. Explore our range of vehicles and find your perfect match today.</p>
+    <div class="car-details">
+
+
+<% if (locals.allCars) { %>
+    <img src="/image/<%=allCars.slug %>.png" alt="<%=allCars.name %>">
+      <h2> <%= allCars.name %></h2>
+      <p>Model: <%= allCars.model %></p>
+      <p>Engine Type: <%= allCars.engineType %></p>
+      <p>Horsepower: <%= allCars.horsePower %></p>
+      <p>Description: <%= allCars.description %></p>
+      <p>Price: <%= allCars.price %></p>
+      <p>Country: <%= allCars.country %></p>
+
+
+        <% } else { %> <h1>kjdskjdhfjsdf</h1>Hello <%} %>
+        
+        <% if (pageType === "Audi") { %>
+            <p>This is a premium Audi car.</p>
+        <% } else if (pageType === "BMW") { %>
+            <p>This is a premium BMW car.</p>
+        <% } else { %>
+            <p>Discover our wide range of cars.</p>
+        <% } %>
+    
+
+</div>
+
+</main>

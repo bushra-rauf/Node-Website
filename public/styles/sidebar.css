@@ -1,0 +1,41 @@
+
+
+html .sidebar {
+    width: 25%;
+    /* position: fixed; */
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar-btn {
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: left;
+}
+.sidebar-btn:hover {
+    background-color: #575757;
+    color: white;
+}
+.sidebar-btn-active {
+    background-color: #333;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a.sidebar-btn {
+        text-align: center;
+        padding: 10px;
+    }
+}

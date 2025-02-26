@@ -21,7 +21,9 @@ app.get("/",(req,res) => {
     res.render("pages/home", {
         title: "Nodewebsite",
         pageType: "home",
-        allCars: allCars
+        allCars: allCars,
+        showSidebar: true,
+        showBackground: "main-home",
     });
 });
 

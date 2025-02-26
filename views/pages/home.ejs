@@ -5,7 +5,10 @@
    <%- include('../partials/header')%>
    <%- include('../partials/navbar')%>
    <div class="main-container">
+    <% if (locals.showSidebar){ %>
        <%- include('../partials/sidebar')%>
+    <%} %>
+      
        <%- include('../partials/main') %>
    </div>
 

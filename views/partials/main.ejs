@@ -1,11 +1,35 @@
-<main>
-    <h1>Welcome to the Cars page</h1>
-    <p>Discover the elegance and performance of Audi and BMW cars. Experience Audi's sophisticated design and advanced technology, or indulge in the dynamic driving pleasure of BMW. Explore our range of vehicles and find your perfect match today.</p>
+<main class="main <%= locals.showBackground ? showBackground : "" %>">
+    <h1>Welcome to the Website!</h1>
+    <p class="paragraph">Discover the elegance and performance of Audi and BMW cars. Experience Audi's sophisticated design and advanced technology, or indulge in the dynamic driving pleasure of BMW. Explore our range of vehicles and find your perfect match today.</p>
+    
+    
+<!-- Home Page -->
+<!-- <main class="main home">
+    <h1 class="welcome-heading">Welcome to the website!</h1>
+    <p class="paragraph">Explore our amazing collection of cars and find your perfect match.</p>
+  </main> -->
+  
+  <!-- Audi Page -->
+  <!-- <main class="main audi">
+    <h1 class="welcome-heading">Welcome to the Audi Page!</h1>
+    <p class="paragraph">Discover the elegance and performance of Audi cars. Experience Audi's sophisticated design and advanced technology.</p>
+  </main> -->
+  
+  <!-- BMW Page -->
+  <!-- <main class="main bmw">
+    <h1 class="welcome-heading">Welcome to the BMW Page!</h1>
+    <p class="paragraph">Indulge in the dynamic driving pleasure of BMW cars. Explore our range of vehicles and find your perfect match today.</p>
+  </main>  -->
+
+    
     <div class="car-details">
+        <% if (locals.allCars && pageType !== "home" &&(pageType !== "BMW" && pageType !== "Audi")) { %>
+            
+        
+       
 
+    <img class="car_image" src="<%= locals.allCars.imageName ? allCars.imageName : ""%>"  alt="<%=allCars.name %>"> 
 
-<% if (locals.allCars) { %>
-    <img src="/image/<%=allCars.slug %>.png" alt="<%=allCars.name %>">
       <h2> <%= allCars.name %></h2>
       <p>Model: <%= allCars.model %></p>
       <p>Engine Type: <%= allCars.engineType %></p>
@@ -15,7 +39,7 @@
       <p>Country: <%= allCars.country %></p>
 
 
-        <% } else { %> <h1>kjdskjdhfjsdf</h1>Hello <%} %>
+         <% } %> 
         
         <% if (pageType === "Audi") { %>
             <p>This is a premium Audi car.</p>

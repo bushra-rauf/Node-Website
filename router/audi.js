@@ -10,6 +10,10 @@ audiCarsRouter.get("/",(req,res) => {
             title: "Audis",
             pageType: "Audi",
             allCars: audis,
+            showSidebar: true,
+            showBackground: "main-audi",
+            
+            
         });
     });
 

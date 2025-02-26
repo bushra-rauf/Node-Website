@@ -1,3 +1,179 @@
 .main {
-   width:75%;
+   width:100%;
 }
+
+/* .background {
+   background-image: url('../images/bmw-audi.jpeg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+} */
+ 
+.main-home {
+   background-image: url('../images/audi-back.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+} 
+ 
+.main-audi {
+   background-image: url('../images/hommmmimage.jpg'); 
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+ 
+.main-bmw {
+   background-image: url('../images/bmw_m5.jpg'); 
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+} 
+
+h1 {
+   font-size: 3em; 
+   color: #333; 
+   text-align: center; 
+   margin-top: 20px; 
+   font-family: 'Arial', sans-serif; 
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+ 
+
+.paragraph {
+   font-size: 1.2em; 
+   color: white; 
+   line-height: 1.5; 
+   text-align: justify; 
+   margin: 20px auto; 
+   max-width: 800px; 
+   background-color: rgba(0, 0, 0, 0.5); 
+   padding: 20px; 
+   border-radius: 10px; 
+}
+
+.car_image {
+   width: 500px;
+   height: 300px; 
+   object-fit: cover; 
+   border-radius: 10px; 
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+   margin: 40px auto; 
+   display: block; 
+ }
+
+.car-details {
+   background-color: rgba(0, 0, 0, 0.5); 
+   padding: 20px; 
+   border-radius: 10px; 
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   max-width: 800px; 
+   margin: 20px auto; 
+   text-align: left; 
+ }
+ 
+.car-details h2 {
+   font-size: 2em; 
+   color: #333; 
+   margin-bottom: 10px; 
+}
+ 
+.car-details p {
+   font-size: 1.2em; 
+   color: #fff; 
+   line-height: 1.5; 
+   margin-bottom: 10px; 
+}
+
+.main {
+  width: 100%;
+} 
+
+.background {
+  background-image: url('../images/bmw-audi.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 3em; 
+  color: #333; 
+  text-align: center; 
+  margin-top: 20px; 
+  font-family: 'Arial', sans-serif; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+.paragraph {
+  font-size: 1.2em; 
+  color: white; 
+  line-height: 1.5; 
+  text-align: justify; 
+  margin: 20px auto; 
+  max-width: 800px; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 20px; 
+  border-radius: 10px; 
+}
+
+.car_image {
+  width: 500px;
+  height: 300px; 
+  object-fit: cover; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin: 40px auto; 
+  display: block; 
+}
+
+.car-details {
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 20px; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px; 
+  margin: 20px auto; 
+  text-align: left; 
+}
+
+.car-details h2 {
+  font-size: 2em; 
+  color: #333; 
+  margin-bottom: 10px; 
+}
+
+.car-details p {
+  font-size: 1.2em; 
+  color: #fff; 
+  line-height: 1.5; 
+  margin-bottom: 10px; 
+}
+
+/* Media query for 786px and below */
+@media screen and (max-width: 786px) {
+
+  
+  .car_image {
+      width: 90%; /* Adjusting width for smaller screens */
+      height: auto; /* Maintaining aspect ratio */
+  }
+  
+  .car-details {
+      max-width: 90%; /* Reducing width for smaller screens */
+      padding: 10px; /* Reducing padding for smaller screens */
+  }
+
+  h1 {
+      font-size: 2rem; /* Reducing font size for smaller screens */
+  }
+  
+  .car-details h2 {
+      font-size: 1.5rem; /* Reducing font size for smaller screens */
+  }
+
+  .car-details p {
+      font-size: 1rem; /* Reducing font size for smaller screens */
+  }
+}
+

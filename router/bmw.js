@@ -10,6 +10,8 @@ bmwCarsRouter.get ("/" , (req, res) => {
         title: 'bmws',
         pageType:"BMW",
         allCars: bmws,
+        showSidebar: true,
+        showBackground: "main-bmw"
     });
 });
 

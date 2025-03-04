@@ -16,8 +16,8 @@ Node Multipages Website :-
 |_______view
 |       |
 |       |_____ pages
-|       |         |______home.ejs
-|       |         |______feature.ejs
+|       |         |____________home.ejs|       |        
+|       |        
 |       |
 |       |_____ Partials
 |                 |___Head.ejs
@@ -32,3 +32,20 @@ Node Multipages Website :-
 npm init 
 craeted folders
 npm i nodemon,express,dotenv,gitignore 
+
+make a vercel.json file 
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "index.js"
+      }
+    ]
+  }
